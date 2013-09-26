@@ -4,6 +4,7 @@
     <string name="app_name">GasMileageUtility</string>
     <string name="action_settings">Settings</string>
     <string name="entry_header_description">Enter Gas Mileage Info</string>
+    <string name="drawer_icon_description">Navigation Drawer Icon</string>
     <string name="current_mileage_hint">Enter Current Gas Mileage</string>
     <string name="gallons_filled">Enter Gallons Filled</string>
     <string name="enter_mileage_info_button">Submit Data</string>

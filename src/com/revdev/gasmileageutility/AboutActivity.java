@@ -12,7 +12,7 @@ public class AboutActivity extends SherlockActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_about);
+		setContentView(R.layout.fragment_about);
 		
 		// Get the version text view
 		TextView versionTextView = (TextView)findViewById(R.id.version);

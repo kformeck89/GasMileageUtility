@@ -47,7 +47,7 @@ public class DataEntryActivity extends SherlockActivity {
 		
 		// Base implementation		
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_data_entry);
+		setContentView(R.layout.fragment_data_entry);
 		
 		// Get the UI components
 		btnSubmitData = (Button)findViewById(R.id.btnEnterMileageInfo);

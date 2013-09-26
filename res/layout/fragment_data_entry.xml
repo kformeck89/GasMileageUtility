@@ -1,0 +1,58 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DataEntryActivity" >
+    
+    <ImageView
+        android:id="@+id/entry_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/enter_mileage_header"
+        android:contentDescription="@string/entry_header_description"/>
+    
+    <TextView
+        android:id="@+id/txtCurrentProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entry_header"
+        android:layout_margin="30dp"
+        android:text="@string/current_profile_label"
+        style="@android:style/Widget.Holo.TextView"/>
+    
+    <EditText
+        android:id="@+id/txtCurrentMileage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCurrentProfile"
+        android:layout_margin="10dp"
+        android:hint="@string/current_mileage_hint"
+        style="@android:style/Widget.Holo.EditText"/>
+    
+    <EditText
+        android:id="@+id/txtGallonsFilled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCurrentMileage"
+        android:layout_margin="10dp"
+        android:hint="@string/gallons_filled"
+        style="@android:style/Widget.Holo.EditText"/>
+    
+    <Button 
+        android:id="@+id/btnEnterMileageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtGallonsFilled"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="@string/enter_mileage_info_button"/>
+    
+    
+</RelativeLayout>
