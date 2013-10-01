@@ -4,6 +4,15 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="about_text_padding">40dp</dimen>
-    <dimen name="drawer_width">240dp</dimen>
+    
+    <!-- Navigation drawer dimensions -->
+    <dimen name="drawer_width">280dp</dimen>
+    <dimen name="drawer_item_height">60dp</dimen>
+    <dimen name="drawer_divider_height">2dp</dimen>
+    <dimen name="drawer_icon_height">36dp</dimen>
+    <dimen name="drawer_icon_padding_right">12dp</dimen>
+    <dimen name="drawer_icon_padding_left">8dp</dimen>
+    <dimen name="drawer_text_padding_right">56dp</dimen>
+    <dimen name="drawer_text_size">16sp</dimen>
 
 </resources>

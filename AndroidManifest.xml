@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.revdev.gasmileageutility"
     android:versionCode="1"
     android:versionName="1.0" >
@@ -19,10 +20,10 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.Sherlock.Light"
+        android:theme="@style/Theme.Sherlock"
         android:uiOptions="none" >
         <activity
-            android:name="com.revdev.gasmileageutility.DataEntryActivity"
+            android:name="com.revdev.gasmileageutility.DrawerActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.Sherlock.Light" >
             <intent-filter>
@@ -35,6 +36,9 @@
             android:name="com.revdev.gasmileageutility.AboutActivity"
             android:label="@string/title_activity_about"
             android:theme="@style/Theme.Sherlock.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.revdev.gasmileageutility.DrawerActivity"/>
         </activity>
     </application>
 

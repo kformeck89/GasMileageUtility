@@ -8,6 +8,9 @@
 package com.revdev.gasmileageutility;
 
 public final class R {
+    public static final class array {
+        public static final int drawer_list_titles=0x7f0b0000;
+    }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -799,6 +802,15 @@ containing a value of this type.
          */
         public static final int activity_horizontal_margin=0x7f07000f;
         public static final int activity_vertical_margin=0x7f070010;
+        public static final int drawer_divider_height=0x7f070014;
+        public static final int drawer_icon_height=0x7f070015;
+        public static final int drawer_icon_padding_left=0x7f070017;
+        public static final int drawer_icon_padding_right=0x7f070016;
+        public static final int drawer_item_height=0x7f070013;
+        public static final int drawer_text_padding_right=0x7f070018;
+        public static final int drawer_text_size=0x7f070019;
+        /**  Navigation drawer dimensions 
+         */
         public static final int drawer_width=0x7f070012;
     }
     public static final class drawable {
@@ -916,114 +928,115 @@ containing a value of this type.
         public static final int abs__toast_frame=0x7f02006f;
         public static final int drawer_shadow=0x7f020070;
         public static final int enter_mileage_header=0x7f020071;
-        public static final int ic_launcher=0x7f020072;
-        public static final int ic_navigation_drawer=0x7f020073;
-        public static final int new_record=0x7f020074;
+        public static final int find_gas_station=0x7f020072;
+        public static final int ic_launcher=0x7f020073;
+        public static final int ic_navigation_drawer=0x7f020074;
+        public static final int new_record=0x7f020075;
+        public static final int view_statistics=0x7f020076;
     }
     public static final class id {
-        public static final int about=0x7f040040;
-        public static final int abs__action_bar=0x7f040020;
-        public static final int abs__action_bar_container=0x7f04001f;
-        public static final int abs__action_bar_subtitle=0x7f040011;
-        public static final int abs__action_bar_title=0x7f040010;
-        public static final int abs__action_context_bar=0x7f040021;
+        public static final int about=0x7f04003f;
+        public static final int abs__action_bar=0x7f040021;
+        public static final int abs__action_bar_container=0x7f040020;
+        public static final int abs__action_bar_subtitle=0x7f040012;
+        public static final int abs__action_bar_title=0x7f040011;
+        public static final int abs__action_context_bar=0x7f040022;
         public static final int abs__action_menu_divider=0x7f04000c;
         public static final int abs__action_menu_presenter=0x7f04000d;
-        public static final int abs__action_mode_bar=0x7f040025;
-        public static final int abs__action_mode_bar_stub=0x7f040024;
-        public static final int abs__action_mode_close_button=0x7f040014;
-        public static final int abs__activity_chooser_view_content=0x7f040015;
-        public static final int abs__checkbox=0x7f04001c;
-        public static final int abs__content=0x7f040022;
-        public static final int abs__default_activity_button=0x7f040018;
-        public static final int abs__expand_activities_button=0x7f040016;
+        public static final int abs__action_mode_bar=0x7f040026;
+        public static final int abs__action_mode_bar_stub=0x7f040025;
+        public static final int abs__action_mode_close_button=0x7f040015;
+        public static final int abs__activity_chooser_view_content=0x7f040016;
+        public static final int abs__checkbox=0x7f04001d;
+        public static final int abs__content=0x7f040023;
+        public static final int abs__default_activity_button=0x7f040019;
+        public static final int abs__expand_activities_button=0x7f040017;
         public static final int abs__home=0x7f04000a;
-        public static final int abs__icon=0x7f04001a;
-        public static final int abs__image=0x7f040017;
-        public static final int abs__imageButton=0x7f040012;
-        public static final int abs__list_item=0x7f040019;
+        public static final int abs__icon=0x7f04001b;
+        public static final int abs__image=0x7f040018;
+        public static final int abs__imageButton=0x7f040013;
+        public static final int abs__list_item=0x7f04001a;
         public static final int abs__progress_circular=0x7f04000e;
         public static final int abs__progress_horizontal=0x7f04000f;
-        public static final int abs__radio=0x7f04001d;
-        public static final int abs__search_badge=0x7f040028;
-        public static final int abs__search_bar=0x7f040027;
-        public static final int abs__search_button=0x7f040029;
-        public static final int abs__search_close_btn=0x7f04002e;
-        public static final int abs__search_edit_frame=0x7f04002a;
-        public static final int abs__search_go_btn=0x7f040030;
-        public static final int abs__search_mag_icon=0x7f04002b;
-        public static final int abs__search_plate=0x7f04002c;
-        public static final int abs__search_src_text=0x7f04002d;
-        public static final int abs__search_voice_btn=0x7f040031;
-        public static final int abs__shortcut=0x7f04001e;
-        public static final int abs__split_action_bar=0x7f040023;
-        public static final int abs__submit_area=0x7f04002f;
-        public static final int abs__textButton=0x7f040013;
-        public static final int abs__title=0x7f04001b;
+        public static final int abs__radio=0x7f04001e;
+        public static final int abs__search_badge=0x7f040029;
+        public static final int abs__search_bar=0x7f040028;
+        public static final int abs__search_button=0x7f04002a;
+        public static final int abs__search_close_btn=0x7f04002f;
+        public static final int abs__search_edit_frame=0x7f04002b;
+        public static final int abs__search_go_btn=0x7f040031;
+        public static final int abs__search_mag_icon=0x7f04002c;
+        public static final int abs__search_plate=0x7f04002d;
+        public static final int abs__search_src_text=0x7f04002e;
+        public static final int abs__search_voice_btn=0x7f040032;
+        public static final int abs__shortcut=0x7f04001f;
+        public static final int abs__split_action_bar=0x7f040024;
+        public static final int abs__submit_area=0x7f040030;
+        public static final int abs__textButton=0x7f040014;
+        public static final int abs__title=0x7f04001c;
         public static final int abs__up=0x7f04000b;
-        public static final int btnEnterMileageInfo=0x7f04003d;
-        public static final int content_frame=0x7f040033;
+        public static final int btnEnterMileageInfo=0x7f04003c;
+        public static final int content_frame=0x7f040034;
         public static final int disableHome=0x7f040009;
-        public static final int drawer_item_icon=0x7f040035;
-        public static final int drawer_item_subtitle=0x7f040037;
-        public static final int drawer_item_title=0x7f040036;
-        public static final int drawer_layout=0x7f040032;
-        public static final int drawer_list=0x7f040034;
-        public static final int edit_query=0x7f040026;
-        public static final int entry_header=0x7f040039;
-        public static final int help=0x7f04003f;
+        public static final int drawer_item_icon=0x7f040036;
+        public static final int drawer_item_title=0x7f040037;
+        public static final int drawer_layout=0x7f040033;
+        public static final int drawer_list=0x7f040035;
+        public static final int edit_query=0x7f040027;
+        public static final int entry_header=0x7f040038;
+        public static final int help=0x7f04003e;
         public static final int homeAsUp=0x7f040006;
         public static final int listMode=0x7f040002;
         public static final int normal=0x7f040001;
-        public static final int settings=0x7f04003e;
+        public static final int settings=0x7f04003d;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
         public static final int tabMode=0x7f040003;
-        public static final int txtCurrentMileage=0x7f04003b;
-        public static final int txtCurrentProfile=0x7f04003a;
-        public static final int txtGallonsFilled=0x7f04003c;
+        public static final int txtCurrentMileage=0x7f04003a;
+        public static final int txtCurrentProfile=0x7f040039;
+        public static final int txtGallonsFilled=0x7f04003b;
         public static final int useLogo=0x7f040004;
-        public static final int version=0x7f040038;
+        public static final int version=0x7f040010;
         public static final int wrap_content=0x7f040000;
     }
     public static final class integer {
         public static final int abs__max_action_buttons=0x7f080000;
     }
     public static final class layout {
-        public static final int abs__action_bar_home=0x7f030000;
-        public static final int abs__action_bar_tab=0x7f030001;
-        public static final int abs__action_bar_tab_bar_view=0x7f030002;
-        public static final int abs__action_bar_title_item=0x7f030003;
-        public static final int abs__action_menu_item_layout=0x7f030004;
-        public static final int abs__action_menu_layout=0x7f030005;
-        public static final int abs__action_mode_bar=0x7f030006;
-        public static final int abs__action_mode_close_item=0x7f030007;
-        public static final int abs__activity_chooser_view=0x7f030008;
-        public static final int abs__activity_chooser_view_list_item=0x7f030009;
-        public static final int abs__list_menu_item_checkbox=0x7f03000a;
-        public static final int abs__list_menu_item_icon=0x7f03000b;
-        public static final int abs__list_menu_item_radio=0x7f03000c;
-        public static final int abs__popup_menu_item_layout=0x7f03000d;
-        public static final int abs__screen_action_bar=0x7f03000e;
-        public static final int abs__screen_action_bar_overlay=0x7f03000f;
-        public static final int abs__screen_simple=0x7f030010;
-        public static final int abs__screen_simple_overlay_action_mode=0x7f030011;
-        public static final int abs__search_dropdown_item_icons_2line=0x7f030012;
-        public static final int abs__search_view=0x7f030013;
-        public static final int abs__simple_dropdown_hint=0x7f030014;
-        public static final int drawer_activity=0x7f030015;
-        public static final int drawer_list_item=0x7f030016;
-        public static final int fragment_about=0x7f030017;
+        public static final int about_activity=0x7f030000;
+        public static final int abs__action_bar_home=0x7f030001;
+        public static final int abs__action_bar_tab=0x7f030002;
+        public static final int abs__action_bar_tab_bar_view=0x7f030003;
+        public static final int abs__action_bar_title_item=0x7f030004;
+        public static final int abs__action_menu_item_layout=0x7f030005;
+        public static final int abs__action_menu_layout=0x7f030006;
+        public static final int abs__action_mode_bar=0x7f030007;
+        public static final int abs__action_mode_close_item=0x7f030008;
+        public static final int abs__activity_chooser_view=0x7f030009;
+        public static final int abs__activity_chooser_view_list_item=0x7f03000a;
+        public static final int abs__list_menu_item_checkbox=0x7f03000b;
+        public static final int abs__list_menu_item_icon=0x7f03000c;
+        public static final int abs__list_menu_item_radio=0x7f03000d;
+        public static final int abs__popup_menu_item_layout=0x7f03000e;
+        public static final int abs__screen_action_bar=0x7f03000f;
+        public static final int abs__screen_action_bar_overlay=0x7f030010;
+        public static final int abs__screen_simple=0x7f030011;
+        public static final int abs__screen_simple_overlay_action_mode=0x7f030012;
+        public static final int abs__search_dropdown_item_icons_2line=0x7f030013;
+        public static final int abs__search_view=0x7f030014;
+        public static final int abs__simple_dropdown_hint=0x7f030015;
+        public static final int drawer_activity=0x7f030016;
+        public static final int drawer_list_item=0x7f030017;
         public static final int fragment_data_entry=0x7f030018;
         public static final int sherlock_spinner_dropdown_item=0x7f030019;
         public static final int sherlock_spinner_item=0x7f03001a;
     }
     public static final class menu {
-        public static final int data_entry_menu=0x7f0b0000;
+        public static final int data_entry_menu=0x7f0c0000;
     }
     public static final class string {
-        public static final int about_paragraph=0x7f09001d;
+        public static final int about_paragraph=0x7f09001f;
         public static final int about_title=0x7f090017;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
@@ -1066,19 +1079,21 @@ containing a value of this type.
         public static final int abs__shareactionprovider_share_with_application=0x7f090007;
         public static final int action_settings=0x7f09000e;
         public static final int app_name=0x7f09000d;
-        public static final int contact_info=0x7f09001a;
-        public static final int copyright=0x7f09001c;
+        public static final int contact_info=0x7f09001c;
+        public static final int copyright=0x7f09001e;
         public static final int current_mileage_hint=0x7f090011;
         public static final int current_profile_label=0x7f090014;
+        public static final int drawer_closed=0x7f090019;
         public static final int drawer_icon_description=0x7f090010;
+        public static final int drawer_open=0x7f090018;
         public static final int enter_mileage_info_button=0x7f090013;
         public static final int entry_header_description=0x7f09000f;
         public static final int gallons_filled=0x7f090012;
-        public static final int gmail_address=0x7f09001b;
+        public static final int gmail_address=0x7f09001d;
         public static final int help_title=0x7f090016;
         public static final int settings_title=0x7f090015;
-        public static final int title_activity_about=0x7f090018;
-        public static final int version=0x7f090019;
+        public static final int title_activity_about=0x7f09001a;
+        public static final int version=0x7f09001b;
     }
     public static final class style {
         /** 
