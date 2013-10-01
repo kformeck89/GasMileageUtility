@@ -26,6 +26,8 @@ public class DrawerListAdapter extends BaseAdapter {
 		this.context = context;
 		this.drawerTitles = drawerTitles;
 		this.icons = icons;
+		inflater = (LayoutInflater)context.getSystemService(
+				Context.LAYOUT_INFLATER_SERVICE);
 	}
 	
 	// Accessors --------------------------------------------------------------
@@ -44,25 +46,41 @@ public class DrawerListAdapter extends BaseAdapter {
 	
 	// Methods ----------------------------------------------------------------
 	public View getView(int position, View convertView, ViewGroup parent){
-	
-		// Inflate the layout
-		inflater = (LayoutInflater)context.getSystemService(
-				Context.LAYOUT_INFLATER_SERVICE);
-		View itemView = inflater.inflate(
-				R.layout.drawer_list_item, parent, false);
-				
-		// Get the views from the drawer list template
-		TextView txtTitle = (TextView)itemView.findViewById
-				(R.id.drawer_item_title);
-		ImageView imgIcon = (ImageView)itemView.findViewById
-				(R.id.drawer_item_icon);
+
+		ViewHolder viewHolder;
+		
+		// If this is being instantiated for the first time
+		if (convertView == null){
+			
+			// Inflate the layout
+			viewHolder = new ViewHolder();
+			convertView = inflater.inflate(
+					R.layout.drawer_list_item, parent, false);
+			
+			// Get the views from the drawer list template
+			viewHolder.txtTitle = (TextView)convertView.findViewById(
+					R.id.drawer_item_title);
+			viewHolder.imgIcon = (ImageView)convertView.findViewById(
+					R.id.drawer_item_icon);
+			
+			// Set the tag so we know this has been instantiated now
+			convertView.setTag(viewHolder);
+		} else {
+			viewHolder = (ViewHolder)convertView.getTag();
+		}
 		
 		// Set the text resources and the icon image
-		txtTitle.setText(drawerTitles[position]);
-		imgIcon.setImageResource(icons[position]);
+		viewHolder.txtTitle.setText(drawerTitles[position]);
+		viewHolder.imgIcon.setImageResource(icons[position]);
 		
-		return itemView;
+		return convertView;
 		
+	}
+	
+	// Classes ----------------------------------------------------------------
+	private static class ViewHolder {
+		TextView txtTitle;
+		ImageView imgIcon;
 	}
 	
 }
