@@ -27,7 +27,6 @@ import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragment;
 import com.revdev.gasmileageutility.Data.MileageRecord;
-import com.revdev.gasmileageutility.Data.MileageRecordsDataSource;
 
 public class DataEntryFragment extends SherlockFragment {
 
@@ -35,7 +34,6 @@ public class DataEntryFragment extends SherlockFragment {
 	private Button btnSubmitData;
 	private EditText txtCurrentMileage;
 	private EditText txtGallons;
-	private MileageRecordsDataSource dataSource;
 	
 	// Constructors -----------------------------------------------------------
 	@Override
@@ -47,7 +45,7 @@ public class DataEntryFragment extends SherlockFragment {
 		// Base implementation		
 		super.onCreate(savedInstanceState);
 		View rootView = inflater.inflate(
-				R.layout.fragment_data_entry, container, false);
+				R.layout.data_entry_fragment, container, false);
 		
 		// Get the UI components
 		btnSubmitData = (Button)rootView.findViewById
@@ -61,7 +59,6 @@ public class DataEntryFragment extends SherlockFragment {
 		btnSubmitData.setOnClickListener(submitButtonClickListener);
 		
 		// Create the dataSource object to interact with the database
-		dataSource = new MileageRecordsDataSource(getActivity());
 		
 		return rootView;
 	}
@@ -71,9 +68,6 @@ public class DataEntryFragment extends SherlockFragment {
 
 		@Override
 		public void onClick(View v) {
-			
-			// Open the database
-			dataSource.open();
 			
 			// Create a new mileage record of the data and get date for now
 			MileageRecord record = new MileageRecord();

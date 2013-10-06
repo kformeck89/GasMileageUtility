@@ -13,7 +13,6 @@ import android.widget.TextView;
 public class DrawerListAdapter extends BaseAdapter {
 
 	// Fields -----------------------------------------------------------------
-	private Context context;
 	private String[] drawerTitles;
 	private int[] icons;
 	private LayoutInflater inflater;
@@ -23,7 +22,6 @@ public class DrawerListAdapter extends BaseAdapter {
 			Context context,
 			String[] drawerTitles,
 			int[] icons){
-		this.context = context;
 		this.drawerTitles = drawerTitles;
 		this.icons = icons;
 		inflater = (LayoutInflater)context.getSystemService(

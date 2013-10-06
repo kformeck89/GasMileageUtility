@@ -22,8 +22,14 @@
     <string name="about_paragraph">
         Gas Mileage Utility is a free android application that allows you to track your gas usage on every vehicle you own. It provides statistics so you can increase your miles per gallon.
     </string>
+    <string-array name="account_editor_view_titles">
+        <item>Add</item>
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
     <string-array name="drawer_list_titles">
         <item>New Mileage Record</item>
+        <item>Manage Accounts</item>
         <item>Nearest Gas Station</item>
         <item>View Statistics</item>
     </string-array>

@@ -9,7 +9,8 @@ package com.revdev.gasmileageutility;
 
 public final class R {
     public static final class array {
-        public static final int drawer_list_titles=0x7f0b0000;
+        public static final int account_editor_view_titles=0x7f0b0000;
+        public static final int drawer_list_titles=0x7f0b0001;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -931,11 +932,12 @@ containing a value of this type.
         public static final int find_gas_station=0x7f020072;
         public static final int ic_launcher=0x7f020073;
         public static final int ic_navigation_drawer=0x7f020074;
-        public static final int new_record=0x7f020075;
-        public static final int view_statistics=0x7f020076;
+        public static final int manage_accounts=0x7f020075;
+        public static final int new_record=0x7f020076;
+        public static final int view_statistics=0x7f020077;
     }
     public static final class id {
-        public static final int about=0x7f04003f;
+        public static final int about=0x7f040040;
         public static final int abs__action_bar=0x7f040021;
         public static final int abs__action_bar_container=0x7f040020;
         public static final int abs__action_bar_subtitle=0x7f040012;
@@ -975,27 +977,28 @@ containing a value of this type.
         public static final int abs__textButton=0x7f040014;
         public static final int abs__title=0x7f04001c;
         public static final int abs__up=0x7f04000b;
-        public static final int btnEnterMileageInfo=0x7f04003c;
-        public static final int content_frame=0x7f040034;
+        public static final int account_editor_pager=0x7f04003d;
+        public static final int btnEnterMileageInfo=0x7f040037;
+        public static final int content_frame=0x7f040039;
         public static final int disableHome=0x7f040009;
-        public static final int drawer_item_icon=0x7f040036;
-        public static final int drawer_item_title=0x7f040037;
-        public static final int drawer_layout=0x7f040033;
-        public static final int drawer_list=0x7f040035;
+        public static final int drawer_item_icon=0x7f04003b;
+        public static final int drawer_item_title=0x7f04003c;
+        public static final int drawer_layout=0x7f040038;
+        public static final int drawer_list=0x7f04003a;
         public static final int edit_query=0x7f040027;
-        public static final int entry_header=0x7f040038;
-        public static final int help=0x7f04003e;
+        public static final int entry_header=0x7f040033;
+        public static final int help=0x7f04003f;
         public static final int homeAsUp=0x7f040006;
         public static final int listMode=0x7f040002;
         public static final int normal=0x7f040001;
-        public static final int settings=0x7f04003d;
+        public static final int settings=0x7f04003e;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
         public static final int tabMode=0x7f040003;
-        public static final int txtCurrentMileage=0x7f04003a;
-        public static final int txtCurrentProfile=0x7f040039;
-        public static final int txtGallonsFilled=0x7f04003b;
+        public static final int txtCurrentMileage=0x7f040035;
+        public static final int txtCurrentProfile=0x7f040034;
+        public static final int txtGallonsFilled=0x7f040036;
         public static final int useLogo=0x7f040004;
         public static final int version=0x7f040010;
         public static final int wrap_content=0x7f040000;
@@ -1026,11 +1029,15 @@ containing a value of this type.
         public static final int abs__search_dropdown_item_icons_2line=0x7f030013;
         public static final int abs__search_view=0x7f030014;
         public static final int abs__simple_dropdown_hint=0x7f030015;
-        public static final int drawer_activity=0x7f030016;
-        public static final int drawer_list_item=0x7f030017;
-        public static final int fragment_data_entry=0x7f030018;
-        public static final int sherlock_spinner_dropdown_item=0x7f030019;
-        public static final int sherlock_spinner_item=0x7f03001a;
+        public static final int add_account_fragment=0x7f030016;
+        public static final int data_entry_fragment=0x7f030017;
+        public static final int delete_account_fragment=0x7f030018;
+        public static final int drawer_activity=0x7f030019;
+        public static final int drawer_list_item=0x7f03001a;
+        public static final int edit_account_fragment=0x7f03001b;
+        public static final int manage_accounts_fragment=0x7f03001c;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001d;
+        public static final int sherlock_spinner_item=0x7f03001e;
     }
     public static final class menu {
         public static final int data_entry_menu=0x7f0c0000;

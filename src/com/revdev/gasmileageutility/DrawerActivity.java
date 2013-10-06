@@ -22,6 +22,7 @@ public class DrawerActivity extends SherlockFragmentActivity {
 	
 	// Fields -----------------------------------------------------------------
 	private Fragment dataEntryFragment;
+	private Fragment manageAccountsFragment;
 	private ListView drawerList;
 	private DrawerLayout drawerLayout;
 	private ActionBarDrawerToggle drawerToggle;
@@ -36,7 +37,8 @@ public class DrawerActivity extends SherlockFragmentActivity {
 		setContentView(R.layout.drawer_activity);
 		
 		// Create the fragments needed
-		dataEntryFragment = new DataEntryFragment();		
+		dataEntryFragment = new DataEntryFragment();	
+		manageAccountsFragment = new ManageAccountsFragment();
 		
 		// Get the activities views
 		drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
@@ -50,6 +52,7 @@ public class DrawerActivity extends SherlockFragmentActivity {
 		titles = getResources().getStringArray(R.array.drawer_list_titles);
 		int[] iconList = new int[]{
 				R.drawable.new_record,
+				R.drawable.manage_accounts,
 				R.drawable.find_gas_station,
 				R.drawable.view_statistics
 		};
@@ -149,6 +152,10 @@ public class DrawerActivity extends SherlockFragmentActivity {
 				fragTran.replace(
 						R.id.content_frame, dataEntryFragment);
 				break;
+			}
+			case 1:{
+				fragTran.replace(
+						R.id.content_frame, manageAccountsFragment);
 			}
 		}
 		
